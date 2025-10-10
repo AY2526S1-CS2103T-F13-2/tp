@@ -28,11 +28,26 @@
         <Label fx:id="name" text="\$first" styleClass="cell_big_label" />
       </HBox>
       <FlowPane fx:id="tags" />
-      <Label fx:id="phone" styleClass="cell_small_label" text="\$phone" />
-      <Label fx:id="address" styleClass="cell_small_label" text="\$address" />
-      <Label fx:id="email" styleClass="cell_small_label" text="\$email" />
-        <Label fx:id="role" styleClass="cell_small_label" text="\$role" />
-      <Label fx:id="event" styleClass="cell_small_label" text="\$event" />
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Phone:" styleClass="cell_small_label" />
+            <Label fx:id="phone" styleClass="cell_small_label" text="$phone" />
+        </HBox>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Address:" styleClass="cell_small_label" />
+            <Label fx:id="address" styleClass="cell_small_label" text="$address" />
+        </HBox>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Email:" styleClass="cell_small_label" />
+            <Label fx:id="email" styleClass="cell_small_label" text="$email" />
+        </HBox>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Role:" styleClass="cell_small_label" />
+            <Label fx:id="role" styleClass="cell_small_label" text="$role" />
+        </HBox>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Event:" styleClass="cell_small_label" />
+            <Label fx:id="event" styleClass="cell_small_label" text="$event" />
+        </HBox>
     </VBox>
   </GridPane>
 </HBox>
