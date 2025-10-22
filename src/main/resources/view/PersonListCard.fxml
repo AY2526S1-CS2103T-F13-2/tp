@@ -26,15 +26,12 @@
           </minWidth>
         </Label>
         <Label fx:id="name" text="\$first" styleClass="cell_big_label" />
+          <Label fx:id="telegram" styleClass="telegram_label" />
       </HBox>
         <VBox spacing="5"></VBox>
         <HBox spacing="5" alignment="CENTER_LEFT">
             <Label text="Phone:" styleClass="cell_small_label" style="-fx-font-weight: bold;" />
             <Label fx:id="phone" styleClass="cell_small_label" text="$phone" />
-        </HBox>
-        <HBox spacing="5" alignment="CENTER_LEFT">
-            <Label text="Address:" styleClass="cell_small_label" style="-fx-font-weight: bold;" />
-            <Label fx:id="address" styleClass="cell_small_label" text="$address" />
         </HBox>
         <HBox spacing="5" alignment="CENTER_LEFT">
             <Label text="Email:" styleClass="cell_small_label" style="-fx-font-weight: bold;" />

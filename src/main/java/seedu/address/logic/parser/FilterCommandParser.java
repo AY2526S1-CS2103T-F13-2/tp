@@ -1,13 +1,13 @@
 package seedu.address.logic.parser;
 
 import static seedu.address.logic.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
-import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_EVENT;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ROLE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SKILL;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TELEGRAM;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -37,17 +37,17 @@ public class FilterCommandParser implements Parser<FilterCommand> {
      */
     public FilterCommand parse(String args) throws ParseException {
         ArgumentMultimap argMultimap =
-                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_EVENT, PREFIX_ADDRESS,
+                ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_EVENT, PREFIX_TELEGRAM,
                         PREFIX_ROLE, PREFIX_SKILL);
 
-        if (!anyPrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_ADDRESS, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ROLE,
+        if (!anyPrefixesPresent(argMultimap, PREFIX_NAME, PREFIX_TELEGRAM, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ROLE,
                 PREFIX_EVENT, PREFIX_SKILL)
                 || !argMultimap.getPreamble().isEmpty()) {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, FilterCommand.MESSAGE_USAGE));
         }
 
 
-        argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ADDRESS, PREFIX_ROLE,
+        argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_TELEGRAM, PREFIX_ROLE,
                 PREFIX_EVENT, PREFIX_SKILL);
 
 
@@ -80,7 +80,7 @@ public class FilterCommandParser implements Parser<FilterCommand> {
                         .toList())
                 .orElse(Collections.emptyList());
 
-        List<String> addresses = argMultimap.getValue(PREFIX_ADDRESS)
+        List<String> telegrams = argMultimap.getValue(PREFIX_TELEGRAM)
                 .map(words -> Arrays.stream(words.split("\\s+"))
                         .map(String::trim)
                         .filter(s -> !s.isEmpty())
@@ -127,7 +127,7 @@ public class FilterCommandParser implements Parser<FilterCommand> {
                         .toList())
                 .orElse(Collections.emptyList());
 
-        PersonFilter filterParams = new PersonFilter(names, phones, emails, addresses, roles, events, skills);
+        PersonFilter filterParams = new PersonFilter(names, phones, emails, telegrams, roles, events, skills);
 
         FilterPredicate filterPredicate = new FilterPredicate(filterParams);
 

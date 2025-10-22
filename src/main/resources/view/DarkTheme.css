@@ -177,6 +177,11 @@
     -fx-text-fill: #010504;
 }
 
+.telegram_label {
+    -fx-text-fill: #1DA1F2; /* light blue */
+    -fx-font-style: italic;
+}
+
 .stack-pane {
      -fx-background-color: derive(#1d1d1d, 20%);
 }

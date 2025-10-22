@@ -17,7 +17,7 @@ public class FilterPredicateTest {
     public void equals() {
         PersonFilter firstPredicateFilter = new PersonFilterBuilder().build();
         PersonFilter secondPredicateFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Farmer"), new Event("Secret"), new Skill("Java"));
 
 
@@ -67,49 +67,49 @@ public class FilterPredicateTest {
 
         // Four keywords
         PersonFilter fourKeywordFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 null, null, null);
         predicate = new FilterPredicate(fourKeywordFilter);
         assertTrue(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withPhone("98765432").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").build()));
+                .withTelegram("Tampines Street 74").build()));
 
         // Five keywords
         PersonFilter fiveKeywordFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Farmer"), null, null);
         predicate = new FilterPredicate(fiveKeywordFilter);
         assertTrue(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withPhone("98765432").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").withRole("Farmer").build()));
+                .withTelegram("Tampines Street 74").withRole("Farmer").build()));
 
         // Six keywords
         PersonFilter sixKeywordFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Farmer"), new Event("Secret"), null);
         predicate = new FilterPredicate(sixKeywordFilter);
         assertTrue(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withPhone("98765432").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa").build()));
+                .withTelegram("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa").build()));
 
         // All keywords
         PersonFilter allKeywordFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Farmer"), new Event("Secret"), new Skill("Java"));
         predicate = new FilterPredicate(allKeywordFilter);
         assertTrue(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withPhone("98765432").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
+                .withTelegram("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
                 .withSkills("Java").build()));
 
         // Mixed-case keywords
         PersonFilter mixedCaseFilter = new PersonFilter(
-                new Name("aLiCe"), null, new Email("alIcE@gMAil.coM"), new Address("tamPiNes"),
+                new Name("aLiCe"), null, new Email("alIcE@gMAil.coM"), new Telegram("tamPiNes"),
                 new Role("faRMer"), new Event("secREt"), new Skill("jAva"));
         predicate = new FilterPredicate(mixedCaseFilter);
         assertTrue(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
+                .withTelegram("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
                 .withSkills("Java").build()));
 
         // Multiple name
@@ -135,12 +135,12 @@ public class FilterPredicateTest {
 
         // Keywords match all except role
         PersonFilter wrongRoleFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Director"), new Event("Secret"), new Skill("Java"));
         predicate = new FilterPredicate(wrongRoleFilter);
         assertFalse(predicate.test(new PersonBuilder()
                 .withName("Alice Bob").withPhone("98765432").withEmail("alice@gmail.com")
-                .withAddress("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
+                .withTelegram("Tampines Street 74").withRole("Farmer").withEvent("Secret Santa")
                 .withSkills("Java").build()));
     }
 }

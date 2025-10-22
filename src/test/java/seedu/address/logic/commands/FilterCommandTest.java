@@ -19,7 +19,6 @@ import org.junit.jupiter.api.Test;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
 import seedu.address.model.UserPrefs;
-import seedu.address.model.person.Address;
 import seedu.address.model.person.Email;
 import seedu.address.model.person.Event;
 import seedu.address.model.person.FilterPredicate;
@@ -27,6 +26,7 @@ import seedu.address.model.person.Name;
 import seedu.address.model.person.PersonFilter;
 import seedu.address.model.person.Phone;
 import seedu.address.model.person.Role;
+import seedu.address.model.person.Telegram;
 import seedu.address.model.skill.Skill;
 import seedu.address.testutil.PersonFilterBuilder;
 
@@ -38,7 +38,7 @@ public class FilterCommandTest {
     public void equals() {
         PersonFilter firstPredicateFilter = new PersonFilterBuilder().build();
         PersonFilter secondPredicateFilter = new PersonFilter(
-                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Address("Tampines"),
+                new Name("Alice"), new Phone("98765432"), new Email("alice@gmail.com"), new Telegram("Tampines"),
                 new Role("Farmer"), new Event("Secret"), new Skill("Java"));
 
 

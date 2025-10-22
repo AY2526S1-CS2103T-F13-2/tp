@@ -3,10 +3,10 @@ package seedu.address.model;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static seedu.address.logic.commands.CommandTestUtil.VALID_ADDRESS_BOB;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_EMAIL_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_PHONE_AMY;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_SKILL_HUSBAND;
+import static seedu.address.logic.commands.CommandTestUtil.VALID_TELEGRAM_BOB;
 import static seedu.address.testutil.Assert.assertThrows;
 import static seedu.address.testutil.TypicalPersons.ALICE;
 import static seedu.address.testutil.TypicalPersons.AMY;
@@ -52,7 +52,7 @@ public class AddressBookTest {
     @Test
     public void resetData_withDuplicatePersons_throwsDuplicatePersonException() {
         // Two persons with the same identity fields
-        Person editedAlice = new PersonBuilder(ALICE).withAddress(VALID_ADDRESS_BOB).withSkills(VALID_SKILL_HUSBAND)
+        Person editedAlice = new PersonBuilder(ALICE).withTelegram(VALID_TELEGRAM_BOB).withSkills(VALID_SKILL_HUSBAND)
                 .build();
         List<Person> newPersons = Arrays.asList(ALICE, editedAlice);
         AddressBookStub newData = new AddressBookStub(newPersons);
@@ -79,7 +79,7 @@ public class AddressBookTest {
     @Test
     public void hasPerson_nameWithSameIdentityFieldsInAddressBook_returnsTrue() {
         addressBook.addPerson(ALICE);
-        Person editedAlice = new PersonBuilder(ALICE).withAddress(VALID_ADDRESS_BOB).withSkills(VALID_SKILL_HUSBAND)
+        Person editedAlice = new PersonBuilder(ALICE).withTelegram(VALID_TELEGRAM_BOB).withSkills(VALID_SKILL_HUSBAND)
                 .build();
         assertTrue(addressBook.hasName(editedAlice));
     }
@@ -87,7 +87,7 @@ public class AddressBookTest {
     @Test
     public void hasPerson_nameWithSamePhoneInAddressBook_throwsIllegalValueException() {
         addressBook.addPerson(AMY);
-        Person dupplicateNoPerson = new PersonBuilder(AMY).withAddress(VALID_ADDRESS_BOB)
+        Person dupplicateNoPerson = new PersonBuilder(AMY).withTelegram(VALID_TELEGRAM_BOB)
                 .withSkills(VALID_SKILL_HUSBAND).withPhone(VALID_PHONE_AMY).build();
 
         assertThrows(DuplicatePersonException.class, ()->addressBook.addPerson(dupplicateNoPerson));
@@ -96,7 +96,7 @@ public class AddressBookTest {
     @Test
     public void hasPerson_nameWithSameInAddressBook_throwsIllegalValueException() {
         addressBook.addPerson(AMY);
-        Person dupplicateNoPerson = new PersonBuilder(AMY).withAddress(VALID_ADDRESS_BOB)
+        Person dupplicateNoPerson = new PersonBuilder(AMY).withTelegram(VALID_TELEGRAM_BOB)
                 .withSkills(VALID_SKILL_HUSBAND).withPhone(VALID_PHONE_AMY).build();
 
         assertThrows(DuplicatePersonException.class, ()->addressBook.addPerson(dupplicateNoPerson));
@@ -105,7 +105,7 @@ public class AddressBookTest {
     @Test
     public void hasPersonWithSameNoInAddressBook_throwsIllegalValueException() {
         addressBook.addPerson(AMY);
-        Person dupplicateNoPerson = new PersonBuilder(BOB).withAddress(VALID_ADDRESS_BOB)
+        Person dupplicateNoPerson = new PersonBuilder(BOB).withTelegram(VALID_TELEGRAM_BOB)
                 .withSkills(VALID_SKILL_HUSBAND).withPhone(VALID_PHONE_AMY).build();
 
         assertThrows(DuplicatePhoneException.class, ()->addressBook.addPerson(dupplicateNoPerson));
@@ -114,7 +114,7 @@ public class AddressBookTest {
     @Test
     public void hasPersonWithSameEmailInAddressBook_throwsIllegalValueException() {
         addressBook.addPerson(AMY);
-        Person dupplicateNoPerson = new PersonBuilder(BOB).withAddress(VALID_ADDRESS_BOB)
+        Person dupplicateNoPerson = new PersonBuilder(BOB).withTelegram(VALID_TELEGRAM_BOB)
                 .withSkills(VALID_SKILL_HUSBAND)
                 .withEmail(VALID_EMAIL_AMY).build();
 

@@ -52,8 +52,8 @@ public class PersonFilterTest {
         editedAmy = new PersonFilterBuilder().withRole("Coach").build();
         assertFalse(amy.equals(editedAmy));
 
-        // different address -> returns false
-        editedAmy = new PersonFilterBuilder().withAddress("Bishan").build();
+        // different telegram -> returns false
+        editedAmy = new PersonFilterBuilder().withTelegram("Bishan").build();
         assertFalse(amy.equals(editedAmy));
 
         // different skills -> returns false

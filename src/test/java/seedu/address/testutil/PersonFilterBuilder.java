@@ -16,7 +16,7 @@ public class PersonFilterBuilder {
     public static final String DEFAULT_NAME = "Amy";
     public static final String DEFAULT_PHONE = "85355255";
     public static final String DEFAULT_EMAIL = "amy@gmail.com";
-    public static final String DEFAULT_ADDRESS = "Jurong";
+    public static final String DEFAULT_TELEGRAM = "Jurong";
     public static final String DEFAULT_ROLE = "Volunteer";
     public static final String DEFAULT_EVENT = "Angbao";
     public static final String DEFAULT_SKILL = "Java";
@@ -24,7 +24,7 @@ public class PersonFilterBuilder {
     private List<Name> names;
     private List<String> phones;
     private List<String> emails;
-    private List<String> addresses;
+    private List<String> telegrams;
     private List<Role> roles;
     private List<Event> events;
     private List<Skill> skills;
@@ -37,7 +37,7 @@ public class PersonFilterBuilder {
         names = List.of(new Name(DEFAULT_NAME));
         phones = List.of(DEFAULT_PHONE);
         emails = List.of(DEFAULT_EMAIL);
-        addresses = List.of(DEFAULT_ADDRESS);
+        telegrams = List.of(DEFAULT_TELEGRAM);
         roles = List.of(new Role(DEFAULT_ROLE));
         events = List.of(new Event(DEFAULT_EVENT));
         skills = List.of(new Skill(DEFAULT_SKILL));
@@ -50,7 +50,7 @@ public class PersonFilterBuilder {
         names = personFilterToCopy.getNames();
         phones = personFilterToCopy.getPhones();
         emails = personFilterToCopy.getEmails();
-        addresses = personFilterToCopy.getAddresses();
+        telegrams = personFilterToCopy.getTelegrams();
         roles = personFilterToCopy.getRoles();
         events = personFilterToCopy.getEvents();
         skills = personFilterToCopy.getSkills();
@@ -81,10 +81,10 @@ public class PersonFilterBuilder {
     }
 
     /**
-     * Sets the {@code Address} of the {@code PersonFilter} that we are building.
+     * Sets the {@code Telegram} of the {@code PersonFilter} that we are building.
      */
-    public PersonFilterBuilder withAddress(String address) {
-        this.addresses = List.of(address);
+    public PersonFilterBuilder withTelegram(String telegram) {
+        this.telegrams = List.of(telegram);
         return this;
     }
 
@@ -113,6 +113,6 @@ public class PersonFilterBuilder {
     }
 
     public PersonFilter build() {
-        return new PersonFilter(names, phones, emails, addresses, roles, events, skills);
+        return new PersonFilter(names, phones, emails, telegrams, roles, events, skills);
     }
 }

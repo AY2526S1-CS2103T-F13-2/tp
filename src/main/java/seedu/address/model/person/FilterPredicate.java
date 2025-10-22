@@ -50,9 +50,9 @@ public class FilterPredicate implements Predicate<Person> {
                 || filterParams.getEmails().stream().anyMatch(
                     email -> person.getEmail().value.toLowerCase().contains(email.toLowerCase()));
 
-        boolean checkAddress = filterParams.getAddresses().isEmpty()
-                || filterParams.getAddresses().stream().anyMatch(
-                    address -> person.getAddress().value.toLowerCase().contains(address.toLowerCase()));
+        boolean checkTelegram = filterParams.getTelegrams().isEmpty()
+                || filterParams.getTelegrams().stream().anyMatch(
+                    telegram -> person.getTelegram().value.toLowerCase().contains(telegram.toLowerCase()));
 
         boolean checkRole = filterParams.getRoles().isEmpty()
                 || filterParams.getRoles().stream().anyMatch(
@@ -67,7 +67,7 @@ public class FilterPredicate implements Predicate<Person> {
                         skill -> person.getSkills().stream().anyMatch(personSkill ->
                         personSkill.skillName.equalsIgnoreCase(skill.skillName)));
 
-        boolean matchFilters = checkName && checkPhone && checkEmail && checkAddress
+        boolean matchFilters = checkName && checkPhone && checkEmail && checkTelegram
                 && checkRole && checkEvent && checkSkill;
 
         return matchFilters;
