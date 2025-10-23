@@ -6,10 +6,12 @@ title: User Guide
 Meet **LinkUp**, a desktop app designed to help team leaders manage their contacts more efficiently and effectively.
 Optimized for users who prefer a Command Line Interface (CLI), **LinkUp** helps you manage your contacts without ever taking 
 your hands off your keyboard.
+
 --------------------------------------------------------------------------------------------------------------------
 ## Table of Contents
 * Table of Contents
 {:toc}
+
 --------------------------------------------------------------------------------------------------------------------
 ## About This Guide
 ### Target Users
@@ -27,6 +29,7 @@ This app is tailored for **community and club leaders** responsible for:
 * _New Users_: Start from the [_Quick Start_ section](#getting-started) to set up LinkUp on your computer
 * _Intermediate Users_: Go to the [_Features_ section](#features) to learn how commands work
 * _Experienced Users_: Refer to the [_Command Summary_](#command-summary) to quickly find and use commands
+
 --------------------------------------------------------------------------------------------------------------------
 ## Getting Started
 
@@ -114,7 +117,7 @@ A person can have any number of skills (including 0)
 **Example Input**:
 * `a n/Betsy Crowe s/Java e/betsycrowe@example.com t/crownie ev/Supernova r/Organiser p/1234567 s/Photography s/Java`
 
-*Expected Output**:
+**Expected Output**:
 * `New person added: Betsy Crowe; Phone: 1234567; Telegram: crownie; Email: betsycrowe@example.com; Role: Organiser; Event: Supernova; Skills: [Photography][Java]`
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**
