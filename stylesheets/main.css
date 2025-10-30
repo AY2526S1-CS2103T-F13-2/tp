@@ -178,3 +178,22 @@ h5,
 h6 {
   color: #e46c0a;
 }
+
+#developerTitle {
+    font-family: "Copperplate";
+    color: #660710;
+}
+
+.developerHeader {
+    color: #995631;
+    font-weight: bold;
+}
+
+.developerHeader2 {
+    color: #6F3417;
+}
+
+.no-bullets {
+    font-family: "Verdana";
+}
+
