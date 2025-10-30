@@ -1,0 +1,189 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "src": "AboutUs.md",
+      "title": "About Us",
+      "headings": {
+        "about-us": "About Us",
+        "project-team": "Project team",
+        "lee-jin-timothy": "Lee Jin Timothy",
+        "isaac-lim": "Isaac Lim",
+        "shananth-sivakumar": "Shananth Sivakumar",
+        "kien": "Kien",
+        "chen-dong-jun": "Chen Dong Jun"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Configuration.md",
+      "title": "Configuration guide",
+      "headings": {
+        "configuration-guide": "Configuration guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "DevOps.md",
+      "title": "DevOps guide",
+      "headings": {
+        "devops-guide": "DevOps guide",
+        "build-automation": "Build automation",
+        "continuous-integration-ci": "Continuous integration (CI)",
+        "code-coverage": "Code coverage",
+        "repository-wide-checks": "Repository-wide checks",
+        "making-a-release": "Making a release"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "DeveloperGuide.md",
+      "title": "Developer Guide",
+      "headings": {
+        "linkup-developer-guide": "LinkUp Developer Guide",
+        "acknowledgements": "Acknowledgements",
+        "setting-up-getting-started": "Setting up, getting started",
+        "design": "Design",
+        "architecture": "Architecture",
+        "ui-component": "UI component",
+        "logic-component": "Logic component",
+        "model-component": "Model component",
+        "storage-component": "Storage component",
+        "common-classes": "Common classes",
+        "implementation": "Implementation",
+        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
+        "proposed-data-archiving": "[Proposed] Data archiving",
+        "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
+        "appendix-requirements": "Appendix: Requirements",
+        "product-scope": "Product scope",
+        "user-stories": "User stories",
+        "use-cases": "Use cases",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "glossary": "Glossary",
+        "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
+        "launch-and-shutdown": "Launch and shutdown",
+        "adding-a-person": "Adding a person",
+        "deleting-a-person": "Deleting a person",
+        "editing-a-person": "Editing a person",
+        "filtering-contacts": "Filtering contacts",
+        "finding-a-person-by-name": "Finding a person by name",
+        "marking-unmarking-a-person-as-favourite": "Marking/Unmarking a person as favourite",
+        "saving-data": "Saving data"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Documentation.md",
+      "title": "Documentation guide",
+      "headings": {
+        "documentation-guide": "Documentation Guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Logging.md",
+      "title": "Logging guide",
+      "headings": {
+        "logging-guide": "Logging guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "SettingUp.md",
+      "title": "Setting up and getting started",
+      "headings": {
+        "setting-up-and-getting-started": "Setting up and getting started",
+        "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
+        "before-writing-code": "Before writing code"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Testing.md",
+      "title": "Testing guide",
+      "headings": {
+        "testing-guide": "Testing guide",
+        "running-tests": "Running tests",
+        "types-of-tests": "Types of tests"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "UserGuide.md",
+      "title": "User Guide",
+      "headings": {
+        "linkup-user-guide": "LinkUp User Guide",
+        "meet-linkup-a-desktop-app-designed-to-help-team-leaders-manage-their-contacts-more-efficiently-and-effectively-optimized-for-users-who-prefer-a-command-line-interface-cli-linkup-helps-you-manage-your-contacts-without-ever-taking-your-hands-off-your-keyboard": "Meet LinkUp, a desktop app designed to help team leaders manage their contacts more efficiently and effectively.\nOptimized for users who prefer a Command Line Interface (CLI), LinkUp helps you manage your contacts without ever taking\nyour hands off your keyboard.",
+        "table-of-contents": "Table of Contents",
+        "what-do-you-need": "What do you need?",
+        "where-do-you-start": "Where do you start?",
+        "getting-started": "Getting Started",
+        "features": "Features",
+        "view-help": "View Help",
+        "add-a-contact": "Add a Contact",
+        "list-all-contacts": "List all Contacts",
+        "edit-a-contact": "Edit a Contact",
+        "search-for-contacts-by-name": "Search for Contacts by Name",
+        "filter-contacts-by-any-fields": "Filter Contacts by any Fields",
+        "delete-contacts": "Delete Contacts",
+        "delete-all-contacts": "Delete ALL Contacts",
+        "add-a-contact-to-favourites": "Add a Contact to Favourites",
+        "remove-a-contact-from-favourites": "Remove a Contact from Favourites",
+        "list-all-favourite-contacts": "List all Favourite Contacts",
+        "close-linkup": "Close LinkUp",
+        "save-the-data": "Save the Data",
+        "edit-the-data-file": "Edit the Data File",
+        "command-summary": "Command Summary",
+        "troubleshooting": "Troubleshooting",
+        "frequently-asked-questions": "Frequently Asked Questions",
+        "known-issues": "Known Issues",
+        "common-error-messages": "Common Error Messages",
+        "further-help-and-amp-support": "Further Help &amp; Support",
+        "get-in-touch-with-us": "Get in Touch with Us"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "index.md",
+      "title": "LinkUp Contact Book",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/dinhkiennguyen.md",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/isaaclim.md",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/johndoe.md",
+      "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/shockingly134.md",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/strikerprv.md",
+      "title": "Dong Jun's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/timothyleejin.md",
+      "headings": {},
+      "headingKeywords": {}
+    }
+  ]
+}
