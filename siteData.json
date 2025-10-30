@@ -68,7 +68,9 @@
         "adding-skills-to-a-person": "Adding skills to a person",
         "deleting-skills-from-a-person": "Deleting skills from a person",
         "copy": "Copy",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "appendix-effort": "Appendix: Effort",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
       },
       "headingKeywords": {}
     },
@@ -130,7 +132,6 @@
         "troubleshooting": "Troubleshooting",
         "frequently-asked-questions": "Frequently Asked Questions",
         "known-issues": "Known Issues",
-        "common-error-messages": "Common Error Messages",
         "further-help-and-amp-support": "Further Help &amp; Support",
         "get-in-touch-with-us": "Get in Touch with Us"
       },
