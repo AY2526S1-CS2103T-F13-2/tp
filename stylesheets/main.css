@@ -5,6 +5,11 @@ mark {
   padding-bottom: 0;
 }
 
+.nav-link {
+  color: #3366CC;
+  font-size: 19px;
+}
+
 .indented {
   padding-left: 20px;
 }

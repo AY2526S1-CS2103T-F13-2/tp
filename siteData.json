@@ -40,7 +40,7 @@
       "src": "DeveloperGuide.md",
       "title": "Developer Guide",
       "headings": {
-        "linkup-developer-guide": "LinkUp Developer Guide",
+        "developer-guide": "Developer Guide",
         "acknowledgements": "Acknowledgements",
         "setting-up-getting-started": "Setting up, getting started",
         "design": "Design",
@@ -115,9 +115,9 @@
       "src": "UserGuide.md",
       "title": "User Guide",
       "headings": {
-        "linkup-user-guide": "LinkUp User Guide",
-        "meet-linkup-a-desktop-app-designed-to-help-team-leaders-manage-their-contacts-more-efficiently-and-effectively-optimized-for-users-who-prefer-a-command-line-interface-cli-linkup-helps-you-manage-your-contacts-without-ever-taking-your-hands-off-your-keyboard": "Meet LinkUp, a desktop app designed to help team leaders manage their contacts more efficiently and effectively.\nOptimized for users who prefer a Command Line Interface (CLI), LinkUp helps you manage your contacts without ever taking\nyour hands off your keyboard.",
-        "table-of-contents": "Table of Contents",
+        "user-guide": "User Guide",
+        "about-linkup": "About LinkUp",
+        "target-users": "Target Users",
         "what-do-you-need": "What do you need?",
         "where-do-you-start": "Where do you start?",
         "getting-started": "Getting Started",
@@ -149,7 +149,9 @@
     {
       "src": "index.md",
       "title": "LinkUp Contact Book",
-      "headings": {},
+      "headings": {
+        "linkup": "LinkUp"
+      },
       "headingKeywords": {}
     },
     {
