@@ -68,6 +68,9 @@
         "filtering-contacts": "Filtering contacts",
         "finding-a-person-by-name": "Finding a person by name",
         "marking-unmarking-a-person-as-favourite": "Marking/Unmarking a person as favourite",
+        "adding-skill-to-a-person": "Adding skill to a person",
+        "deleting-skill-from-a-person": "Deleting skill from a person",
+        "copy": "Copy",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
