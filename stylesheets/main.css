@@ -5,6 +5,10 @@ mark {
   padding-bottom: 0;
 }
 
+#page-nav * {
+    font-size: 14px;
+}
+
 .nav-link {
   color: #3366CC;
   font-size: 19px;
@@ -92,6 +96,7 @@ mark {
 
 .nav-component {
   overflow-y: auto;
+  font-size: 17px;
 }
 
 #page-nav {
