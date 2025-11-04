@@ -190,19 +190,23 @@ h6 {
 #developerTitle {
     font-family: "Copperplate";
     color: #660710;
+    font-size: 4rem;
 }
 
 .developerHeader {
-    color: #f08b51;
+    color: #cc5500;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .developerHeader2 {
-    color: #bb6653;
+    color: #800000;
+    font-size: 2rem;
 }
 
 .developerHeader3 {
     color: #7b4019;
+    font-size: 1.5rem;
 }
 
 .no-bullets {
