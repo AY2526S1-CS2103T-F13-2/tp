@@ -114,7 +114,7 @@
       "src": "UserGuide.md",
       "title": "User Guide",
       "headings": {
-        "user-guide": "User Guide",
+        "developerTitle": "User Guide",
         "about-linkup": "About LinkUp",
         "target-users": "Target Users",
         "what-do-you-need": "What do you need?",
@@ -122,9 +122,9 @@
         "quick-start": "Quick Start",
         "interface-walkthrough": "Interface Walkthrough",
         "features": "Features",
-        "help-and-amp-exit": "Help &amp; Exit",
+        "help-and-exit": "Help & Exit",
         "contact-management": "Contact Management",
-        "contact-viewing-and-amp-searching": "Contact Viewing &amp; Searching",
+        "contact-viewing-and-searching": "Contact Viewing & Searching",
         "skill-management": "Skill Management",
         "favourite-contact-management": "Favourite Contact Management",
         "data-storage": "Data Storage",
@@ -132,7 +132,7 @@
         "troubleshooting": "Troubleshooting",
         "frequently-asked-questions": "Frequently Asked Questions",
         "known-issues": "Known Issues",
-        "further-help-and-amp-support": "Further Help &amp; Support",
+        "further-help-and-support": "Further Help & Support",
         "get-in-touch-with-us": "Get in Touch with Us"
       },
       "headingKeywords": {}
@@ -141,7 +141,7 @@
       "src": "index.md",
       "title": "LinkUp Contact Book",
       "headings": {
-        "linkup": "LinkUp"
+        "developerTitle": "LinkUp"
       },
       "headingKeywords": {}
     },

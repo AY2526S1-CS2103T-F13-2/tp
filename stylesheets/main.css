@@ -193,12 +193,16 @@ h6 {
 }
 
 .developerHeader {
-    color: #995631;
+    color: #f08b51;
     font-weight: bold;
 }
 
 .developerHeader2 {
-    color: #6F3417;
+    color: #bb6653;
+}
+
+.developerHeader3 {
+    color: #7b4019;
 }
 
 .no-bullets {
