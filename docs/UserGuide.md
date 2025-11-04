@@ -4,21 +4,22 @@
   pageNav: 3
 ---
 
-# User Guide
+<h1 id="developerTitle">User Guide</h1>
+<br>
 
 Meet **LinkUp**, a desktop app designed to help team leaders manage their contacts more efficiently and effectively.
 Optimized for users who prefer typing commands to use systems, **LinkUp** helps you manage your contacts without 
 ever taking your hands off your keyboard.
 
 --------------------------------------------------------------------------------------------------------------------
-## **About LinkUp**
-### Target Users
+<h2 class="developerHeader">About LinkUp</h2>
+<h3 class="developerHeader2">Target Users</h3>
 This app is tailored for **community and club leaders** responsible for:
 * Tracking members' events and roles
 * Recording members' skills to efficiently allocate work
 * Communicating with members via messaging platforms (e.g. Telegram)
 
-### What do you need?
+<h3 class="developerHeader2">What do you need?</h3>
 **Basic Digital Literacy:**
 * You should know how to download software and type commands
 * You should have experience with keyboard-driven workflows to tackle tasks efficiently
@@ -27,14 +28,14 @@ This app is tailored for **community and club leaders** responsible for:
 * A Mac, Windows, or Linux computer
 * 50MB of available storage space
 
-### Where do you start?
+<h3 class="developerHeader2">Where do you start?</h3>
 * **New users:** Start from [_Quick Start_](#quick-start) to set up LinkUp on your computer
 * **Existing users:** Go to [_Features_](#features) for command details
 * **Advanced users:** Refer to the [_Command Summary_](#command-summary) for quick command guide
 
 --------------------------------------------------------------------------------------------------------------------
 
-## **Quick Start**
+<h2 class="developerHeader">Quick Start</h2>
 
 Let's walk you through the setup process of LinkUp.
 
@@ -80,7 +81,7 @@ Let's walk you through the setup process of LinkUp.
     
 --------------------------------------------------------------------------------------------------------------------
 
-## **Interface Walkthrough**
+<h2 class="developerHeader">Interface Walkthrough</h2>
 
 <img src="images/LabelledInterface.png" width="750px"> <br>
 
@@ -92,7 +93,7 @@ Moving from the top of the interface to the bottom:
 
 --------------------------------------------------------------------------------------------------------------------
 
-## **Features**
+<h2 class="developerHeader">Features</h2>
 
 <box type="info" seamless>
 
@@ -129,8 +130,8 @@ Moving from the top of the interface to the bottom:
   space characters surrounding line-breaks may be omitted when copied over to the application.
   </box>
 
-### Help & Exit
-#### 1. View Help
+<h3 class="developerHeader2">Help & Exit</h3>
+<h4 class="developerHeader3">1. View Help</h4>
 
 View a brief message on commands you can use and a pop-up message explaining how to access the help page.
 
@@ -139,7 +140,7 @@ View a brief message on commands you can use and a pop-up message explaining how
 **Expected Output:** <br>
 ![Example Output for Help Command](images/Helpoutput1.png) <br>
 
-#### 2. Close LinkUp
+<h4 class="developerHeader3">2. Close LinkUp</h4>
 
 Exit the application.
 
@@ -150,9 +151,9 @@ your contact list will be restored whenever you reopen LinkUp.
 
 <br>
 
-### Contact Management
+<h3 class="developerHeader2">Contact Management</h3>
 
-#### Contact Information
+<h4 class="developerHeader3">Contact Information</h4>
 
 This a table of all the information stored about each contact.
 
@@ -213,7 +214,7 @@ This a table of all the information stored about each contact.
         </tr>
         <tr>
             <td class="prefix">ev</td>
-            <td class="field-name">Events</td>
+            <td class="field-name">Event(s)</td>
             <td class="description">Events the contact is participating in (e.g. Orientation Camp)</td>
             <td class="requirements">
                 Must be between 2 - 60 characters. <br>
@@ -222,7 +223,7 @@ This a table of all the information stored about each contact.
         </tr>
         <tr>
             <td class="prefix">r</td>
-            <td class="field-name">Roles</td>
+            <td class="field-name">Role(s)</td>
             <td class="description">Role of the contact at each event (e.g. Planning Committee)</td>
             <td class="requirements">
                 Must be between 2 - 30 characters. <br>
@@ -231,7 +232,7 @@ This a table of all the information stored about each contact.
         </tr>
         <tr>
             <td class="prefix">sk</td>
-            <td class="field-name">Skills</td>
+            <td class="field-name">Skill(s)</td>
             <td class="description">Skills of the contact. (e.g. Pro Gamer)</td>
             <td class="requirements">
                 Skills can only contain letters, numbers, spaces and these special characters:
@@ -244,7 +245,7 @@ This a table of all the information stored about each contact.
 </table>
 
 
-#### 3. Add a Contact
+<h4 class="developerHeader3">3. Add a Contact</h4>
 
 Add a person to the address book.
 
@@ -285,7 +286,7 @@ add n/John Deez p/98765431 ev/Supernova r/Organiser e/johnde@example.com t/john1
 
 <br>
 
-#### 4. Edit a Contact
+<h4 class="developerHeader3">4. Edit a Contact</h4>
 
 Edit the details of an existing person in the address book.
 
@@ -345,7 +346,7 @@ Edited Person: Rebecca Tan; Phone: 99272758; Telegram: @FishyBernice; Email: ber
 
 <br>
 
-#### 5. Delete Contacts
+<h4 class="developerHeader3">5. Delete Contacts</h4>
 
 Delete specified persons from the address book.
 
@@ -382,7 +383,7 @@ Betsy Crower; Phone: 1234567; Telegram: @crownie; Email: betsycrowe@example.com;
 
 <br>
 
-#### 6. Copy Contact
+<h4 class="developerHeader3">6. Copy Contact</h4>
 Copy an existing contact to make it easier to add a person with similar parameters.
 
 **Format:** <br> `copy INDEX` or `c INDEX`
@@ -408,7 +409,7 @@ add n/John Deez p/98765431 e/johnde@example.com t/john123 ev/Supernova r/Organis
 
 <br>
 
-#### 7. Delete ALL Contacts
+<h4 class="developerHeader3">7. Delete ALL Contacts</h4>
 
 Clear address book by deleting all persons from it.
 
@@ -426,9 +427,9 @@ Address book has been cleared!
 
 <br>
 
-### Contact Viewing & Searching
+<h3 class="developerHeader2">Contact Viewing & Searching</h3>
 
-#### 8. List all Contacts
+<h4 class="developerHeader3">8. List all Contacts</h4>
 
 View a list of all persons in the address book.
 
@@ -436,7 +437,7 @@ View a list of all persons in the address book.
 
 <br>
 
-#### 9. Search for Contacts by Name
+<h4 class="developerHeader3">9. Search for Contacts by Name</h4>
 
 Find persons whose names contain any of the given keywords.
 
@@ -446,21 +447,21 @@ Find persons whose names contain any of the given keywords.
 * The order of the keywords does not matter. e.g. `Hans Bo` will match `Bo Hans`.
 * Only the name is searched.
 * Only full words will be matched. e.g. `Han` will not match `Hans`.
-* Persons matching at least one keyword will be returned.
-  e.g. `Hans Bo` will return `Hans Gruber`, `Bo Yang`.
+  * Persons matching all keywords will be returned.
+    e.g. `Hans Gruber` will return `Hans Gruber` and not `Hans Tan`.
 
 **Example Input:** <br>
 ```
-find alex david
+find alex yeo
 ``` 
 <br>
 
 **Expected Output:** <br>
-If there are Alex Yeoh and David Li in your contacts, they will be listed.
+If there are Alex Yeo and Alexa Yeoh in your contacts, only Alex Yeo will be listed.
 
 <br>
 
-#### 10. Filter Contacts by any Fields
+<h4 class="developerHeader3">10. Filter Contacts by any Fields</h4>
 
 Filter contacts from the address book based on name, event, role, phone number, telegram handle, email and skills.
 
@@ -497,11 +498,11 @@ This time, only contacts with both `Bernice` in their name and `Charity` in thei
 
 <br>
 
-### Skill Management
-#### 11. Add new Skill
+<h3 class="developerHeader2">Skill Management</h3>
+<h4 class="developerHeader3">11. Add new Skill</h4>
 Add skill to an existing person from the address book.
 
-**Format:** <br> `addskill INDEX [sk/SKILL]…` or `as INDEX [sk/SKILL]…`
+**Format:** <br> `addskill INDEX sk/SKILL…` or `as INDEX sk/SKILL…`
 
 * Adds one or more skills to the person at the specified `INDEX`.
 * Only one `INDEX` must be provided.
@@ -529,10 +530,10 @@ Added skill [Cycling], [JavaScript] to John Deez
 
 <br>
 
-#### 12. Delete existing Skill
+<h4 class="developerHeader3">12. Delete existing Skill</h4>
 Delete skills of an existing person from the address book.
 
-**Format:** <br> `dskill INDEX [sk/SKILL]…` or `ds INDEX [sk/SKILL]…`
+**Format:** <br> `dskill INDEX sk/SKILL…` or `ds INDEX sk/SKILL…`
 
 * Delete one or more skills of the person at the specified `INDEX`.
 * Only one `INDEX` must be provided.
@@ -557,8 +558,8 @@ Deleted skills [Cycling] from John Deez
 
 <br>
 
-### Favourite Contact Management
-#### 13. Add a Contact to Favourites
+<h3 class="developerHeader2">Favourite Contact Management</h3>
+<h4 class="developerHeader3">13. Add a Contact to Favourites</h4>
 
 Add a person from the address book to favourites and mark them with a heart icon.
 
@@ -584,7 +585,7 @@ Marked John Deez as favourite.
 
 <br>
 
-#### 14. Remove a Contact from Favourites
+<h4 class="developerHeader3">14. Remove a Contact from Favourites</h4>
 
 Remove a specified person from the address book from favourites and removes the heart icon.
 
@@ -610,7 +611,7 @@ Unmarked John Deez from favourites.
 
 <br>
 
-#### 15. List all Favourite Contacts
+<h4 class="developerHeader3">15. List all Favourite Contacts</h4>
 
 View a list of all your favourite persons in the address book.
 
@@ -622,14 +623,14 @@ View a list of all your favourite persons in the address book.
 
 <br>
 
-### Data Storage
-#### 16. Save the Data
+<h3 class="developerHeader2">Data Storage</h3>
+<h4 class="developerHeader3">16. Save the Data</h4>
 
 LinkUp data is saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
 <br>
 
-#### 17. Edit the Data File
+<h4 class="developerHeader3">17. Edit the Data File</h4>
 
 LinkUp data are saved automatically as a JSON file `[JAR file location]/data/addressbook.json`. Advanced users are welcome to update data directly by editing that data file.
 
@@ -641,7 +642,7 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
 </box>
 
 --------------------------------------------------------------------------------------------------------------------
-## **Command Summary**
+<h2 class="developerHeader">Command Summary</h2>
 
 <table class="command-summary-table">
   <thead>
@@ -708,7 +709,7 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
         <code>find KEYWORD [MORE_KEYWORDS]</code> or <br>
         <code>f KEYWORD [MORE_KEYWORDS]</code>
         <br><br>
-        e.g. <code>find James Jake</code> or <code>f James Jake</code>
+        e.g. <code>find James Tan</code> or <code>f James Tan</code>
       </td>
     </tr>
     <tr>
@@ -723,8 +724,8 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
     <tr>
       <td><b>Add Skill</b>: <br> Add skill(s) to contact</td>
       <td>
-        <code>addskill INDEX [sk/SKILL]…</code> or <br>
-        <code>as INDEX [sk/SKILL]…</code>
+        <code>addskill INDEX sk/SKILL…</code> or <br>
+        <code>as INDEX sk/SKILL…</code>
         <br><br>
         e.g. <code>addSkill 1 sk/JavaScript</code> or <code>as 1 sk/JavaScript</code>
       </td>
@@ -732,8 +733,8 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
     <tr>
       <td><b>Delete Skill</b>: <br> Delete skill(s) from contact</td>
       <td>
-        <code>dskill INDEX [sk/SKILL]…</code> or <br>
-        <code>ds INDEX [sk/SKILL]…</code>
+        <code>dskill INDEX sk/SKILL…</code> or <br>
+        <code>ds INDEX sk/SKILL…</code>
         <br><br>
         e.g. <code>dskill 2 sk/Cycling</code> or <code>ds 2 sk/Cycling</code>
       </td>
@@ -741,7 +742,7 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
     <tr>
       <td><b>Favourite</b>: <br> Add a contact to favourites</td>
       <td>
-        <code>favourite INDEX [sk/SKILL]…</code> or <br>
+        <code>favourite INDEX</code> or <br>
         <code>fav INDEX</code>
         <br><br>
         e.g. <code>favourite 3</code> or <code>fav 3</code>
@@ -750,7 +751,7 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
     <tr>
       <td><b>Unfavourite</b>: <br> Remove a contact from favourites</td>
       <td>
-        <code>unfavourite INDEX [sk/SKILL]…</code> or <br>
+        <code>unfavourite INDEX</code> or <br>
         <code>unfav INDEX</code>
         <br><br>
         e.g. <code>unfavourite 3</code> or <code>unfav 3</code>
@@ -765,15 +766,15 @@ LinkUp data are saved automatically as a JSON file `[JAR file location]/data/add
 
 --------------------------------------------------------------------------------------------------------------------
 
-## **Troubleshooting**
-### Frequently Asked Questions
+<h2 class="developerHeader">Troubleshooting</h2>
+<h3 class="developerHeader2">Frequently Asked Questions</h3>
 
-#### 1. Launching LinkUp
+<h4 class="developerHeader3">1. Launching LinkUp</h4>
 **Why am I unable to run the `LinkUp.jar` file?** <br>
 Ensure you have Java `17` or above installed in your computer. After installing LinkUp, type `java -jar LinkUp.jar` in your command terminal to launch LinkUp.
 Refer to [_Quick Start_](#quick-start) for the detailed LinkUp launching process.
 
-#### 2. LinkUp Data
+<h4 class="developerHeader3">2. LinkUp Data</h4>
 **How do I save my data in LinkUp?** <br>
 LinkUp data is saved in your computer automatically after any command that changes the data. There is no need to save manually. This means that your contact list will be restored whenever you reopen LinkUp. <br>
 
@@ -784,7 +785,7 @@ into your Downloads folder of your computer, the contact data will be stored in 
 **How do I factory reset LinkUp and get the original sample contact list?** <br>
 Exit LinkUp, and then delete the `addressbook.json` file in `[LinkUp.jar file location]/data/`. Relaunch the app and the contact list should be back to the original sample contact list. <br>
 
-#### 3. Contact Detail Management
+<h4 class="developerHeader3">3. Contact Detail Management</h4>
 **How do I edit only 1 of my 2 skills for a specific contact?** <br>
 You would have to edit both skills in order for you to see the changes. So assuming
 you have `skills: Boxing, Drumming` but you wish to change Drumming to Singing, you can only do this by using the `edit` command
@@ -819,14 +820,14 @@ Adding a contact with an existing phone number / email address / name / telegram
 **Can I add Chinese/Tamil names to LinkUp?** <br>
 Unfortunately, this current version of LinkUp can only save names with the specified English letters as shown in the [_Contact Management_](#contact-management). As such, names like "小明" are not allowed.
 
-### Known Issues
+<h3 class="developerHeader2">Known Issues</h3>
 
 * **Issue:** When using multiple screens, if you move the application to a secondary screen, and later switch to using only the primary screen, LinkUp's interface will open off-screen. <br>
 **Solution:** Delete the `preferences.json` file created by the application before running the application again.
 * **Issue:** If you minimize the Help Window and then run the `help` command (or use the `Help` menu, or the keyboard shortcut `F1`) again, the original Help Window will remain minimized, and no new Help Window will appear. <br>
 **Solution:** Manually restore the minimized Help Window.
 
-### Further Help & Support
+<h3 class="developerHeader2">Further Help & Support</h3>
 * Visit our [GitHub Repository](https://github.com/AY2526S1-CS2103T-F13-2/tp) or [Developer Guide](https://ay2526s1-cs2103t-f13-2.github.io/tp/DeveloperGuide.html) for technical details.
 * Post your query [here](https://github.com/AY2526S1-CS2103T-F13-2/tp/issues) by creating a new issue, detailing 
   * Your exact command input
@@ -837,7 +838,7 @@ Unfortunately, this current version of LinkUp can only save names with the speci
 We will get back to you as soon as possible.
 
 --------------------------------------------------------------------------------------------------------------------
-## **Get in Touch with Us**
+<h2 class="developerHeader">Get in Touch with Us</h2>
 We’d love to hear from you! Whether you have questions, feedback, or suggestions for new features, feel free to reach out to us.
 
 **Who We Are:** <br>

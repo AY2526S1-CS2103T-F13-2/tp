@@ -4,7 +4,8 @@ title: LinkUp Contact Book
 ---
 <br>
 
-# LinkUp
+<h1 id="developerTitle">LinkUp</h1>
+<br>
 
 <br>
 
